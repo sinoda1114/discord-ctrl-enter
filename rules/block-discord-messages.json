@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https://([^/]+\\.)?discord(app)?\\.com/api/v[0-9]+/channels/[^/]+/messages$",
+      "requestMethods": [
+        "post"
+      ],
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  }
+]

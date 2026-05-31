@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discord Ctrl Enter Options</title>
+    <link rel="stylesheet" href="./options.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <p class="eyebrow">Discord Ctrl Enter</p>
+        <h1>送信キー設定</h1>
+        <p class="version">v0.5.6</p>
+      </header>
+
+      <section class="panel" aria-labelledby="behavior-title">
+        <div class="row">
+          <div>
+            <h2 id="behavior-title">拡張機能</h2>
+            <p>Discord のメッセージ入力欄だけで動作します。</p>
+          </div>
+          <label class="switch">
+            <input id="enabled" type="checkbox">
+            <span></span>
+          </label>
+        </div>
+
+        <dl class="bindings">
+          <div>
+            <dt>Enter</dt>
+            <dd>改行</dd>
+          </div>
+          <div>
+            <dt>Ctrl+Enter / Command+Enter</dt>
+            <dd>送信</dd>
+          </div>
+          <div>
+            <dt>Shift+Enter</dt>
+            <dd>Discord 標準の改行に任せる</dd>
+          </div>
+        </dl>
+      </section>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="./options.js"></script>
+  </body>
+</html>
